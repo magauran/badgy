@@ -94,8 +94,8 @@ extension Badgy {
         var angle: Int
 
         func validate() throws {
-            guard options.label.count <= 4 else {
-                throw ValidationError("Label should contain maximum 4 characters")
+            guard options.label.count <= 5 else {
+                throw ValidationError("Label should contain maximum 5 characters")
             }
 
             guard position.isValidForLongLabels else {
